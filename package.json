@@ -1,19 +1,32 @@
 {
-  "name": "npm-package-boilerplate",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "jest": "^29.3.1",
-    "prettier": "^2.8.1"
-  },
-  "devDependencies": {
-    "eslint": "^8.29.0"
-  }
+	"name": "npm-package-boilerplate",
+	"version": "0.0.1",
+	"description": "npm package boilerplate",
+	"main": "./src/index.js",
+	"bin": {
+		"npm-package-boilerplate": "./src/index.js"
+	},
+	"type": "commonjs",
+	"scripts": {
+		"test": "jest"
+	},
+	"devDependencies": {
+		"eslint": "^8.29.0",
+		"jest": "^29.3.1",
+		"prettier": "^2.8.1"
+	},
+	"files": [
+		"src/**/*.js",
+		"!**/**/*.test.js"
+	],
+	"keywords": [],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/fpetrakov/npm-package-boilerplate"
+	},
+	"bugs": {
+		"url": "https://github.com/fpetrakov/npm-package-boilerplate/issues"
+	},
+	"author": "Fedya Petrakov",
+	"license": "MIT"
 }
